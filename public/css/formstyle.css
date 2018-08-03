@@ -1,0 +1,120 @@
+.panel-body{
+        padding: 50px 50px !important;
+        font-size: 15px;
+        color: #104E8B;
+}
+.form-horizontal .control-label{
+        text-align: left;
+        margin-bottom: 0px;
+        padding-bottom: 3px;
+}
+.rootdiv{
+	padding:40px;
+}
+.page-heading{
+    font-family: sans-serif;
+    font-size: 40px;
+    padding: 20px 0px 40px;
+    text-align: center;
+    color: #003d99;
+    font-weight: bold;
+}
+.control-label{
+    font-size:16px;
+}
+hr{
+    color: #000000;
+    height:2px;
+}
+body{
+    background-color: #fffafa;
+}
+sup{
+   color:red;
+}
+span{
+   font-size:30px;
+   color: #808080;
+}
+button>span{
+   font-size:20px;
+   color:#fff;
+}
+.div-style{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px #a8a8a8;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+}
+.service{
+        font-family: georgia;
+        font-size: 40pt;
+        font-weight: bold;
+        color: #003d99; 
+
+}
+.checkbox{
+        bottom: 0;
+        right: 0;
+        font-family: garamond;
+        font-size: 18px;
+        font-weight: bold;
+}
+h3{
+	color: #003d99;
+}
+hr{
+	background-color: #003d99;
+	height: 2px;
+	
+}
+.row .form-group div{
+        padding-top: 5px;
+}
+.row{
+	margin-bottom: 0px !important;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen (min-width: 100px) and (max-width: 768px){
+	.col-s-6 {width: 50%;}
+}
+@media only screen and (min-width: 769px) and  (max-width: 992px) {
+    /* For tablets: */
+    .offset-m-1-6{ margin-left: 50%; }
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 993px) {
+    /* For desktop: */
+    .offset-1-3{ margin-right: 50%; }
+    .offset-1-12{margin-left: 100%;}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
