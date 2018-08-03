@@ -277,3 +277,6 @@ a{
 .icon-bar{
     background-color: black;
 }
+html, body {
+    overflow-x: hidden;
+}

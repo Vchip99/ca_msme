@@ -47,5 +47,5 @@
   <div align="center" ><div class="small-item">&copy; {{$year}}, ALL RIGHT RESERVED.</div></div>
 </div>
 <script type="text/javascript">
-  $(document).scroll(function() { var y = $(this).scrollTop(); if (y > 600) { $('#msmeImg').fadeOut(); } else { $('#msmeImg').fadeIn(); } });
+  $(document).scroll(function() { var y = $(this).scrollTop(); if (y > 400) { $('#msmeImg').fadeOut(); } else { $('#msmeImg').fadeIn(); } });
 </script>

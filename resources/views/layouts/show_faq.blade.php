@@ -67,7 +67,7 @@
     </div>
     <h1>Frequently Asked Questions</h1>
     <nav class=" col-3 hidden-xs hidden-sm pills" id="myScrollSpy">
-      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="100">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="405">
             <li><a href="#MSME">MSME</a></li>
             <li><a class="navbar-brand" href="#FAQ">Back to top  <span class="fa fa-hand-o-up"></span></a></li>
           </ul>
@@ -136,4 +136,5 @@
       </div>
     </div>
 </div>
+  @include('footer.footer')
 @stop

@@ -34,7 +34,7 @@
 @section('content')
   @include('header.header')
 	<div  class=" row"  style="">
-	    <center><h1 class="page-heading">MSME ONLINE SELF REGISTRATION FORM</h1></center>
+	    <h3 style="text-align: center; padding: 0 15px;">MSME ONLINE SELF REGISTRATION FORM</h3>
 	    @if(Session::has('message'))
 	      <div class="alert alert-success" id="message">
 	        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
