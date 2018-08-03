@@ -26,7 +26,7 @@ class MsmeRegistration extends Model
         '5' => 'Completed',
     ];
 
-    public static  $msmePrice = 1770;
+    public static  $msmePrice = 10;
 
     protected static function addOrUpdateMsmeRegistration(Request $request, $isUpdate=false){
     	$adhaarNumber = InputSanitise::inputString($request->get('adhaar_number'));

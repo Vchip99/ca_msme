@@ -94,7 +94,7 @@ class MsmeController extends Controller
             if('local' == \Config::get('app.env')){
                 $api = new Instamojo('4a6718254b142b18f154158d73ec5e51', '370f403cdfc0a5f12eb6395f110b8da9','https://test.instamojo.com/api/1.1/');
             } else {
-                $api = new Instamojo('ce4d49e4727024a22fedc93e040ecac6', '1aa2a1f088aa98d264f614a80fa8a248','https://www.instamojo.com/api/1.1/');
+                $api = new Instamojo('4c7a535ff5b55a6145826686dc262792', 'd4eeb70cbc4e47f65f304f83eed6c205','https://www.instamojo.com/api/1.1/');
             }
 
             try {
@@ -131,7 +131,7 @@ class MsmeController extends Controller
         if('local' == \Config::get('app.env')){
             $api = new Instamojo('4a6718254b142b18f154158d73ec5e51', '370f403cdfc0a5f12eb6395f110b8da9','https://test.instamojo.com/api/1.1/');
         } else {
-            $api = new Instamojo('ce4d49e4727024a22fedc93e040ecac6', '1aa2a1f088aa98d264f614a80fa8a248','https://www.instamojo.com/api/1.1/');
+            $api = new Instamojo('4c7a535ff5b55a6145826686dc262792', 'd4eeb70cbc4e47f65f304f83eed6c205','https://www.instamojo.com/api/1.1/');
         }
 
         $payid = $request->get('payment_request_id');
@@ -207,7 +207,7 @@ class MsmeController extends Controller
         if('local' == \Config::get('app.env')){
             $mac_calculated = hash_hmac("sha1", implode("|", $data), "aa7af601d8f946c49653c14e6d88d6c6");
         } else {
-            $mac_calculated = hash_hmac("sha1", implode("|", $data), "adc79e762cf240f49022176bd21f20ce");
+            $mac_calculated = hash_hmac("sha1", implode("|", $data), "e39308a0e531454e97de1c8a158c0719");
         }
         if($mac_provided == $mac_calculated){
             $to = 'vchipdesigng8@gmail.com';
