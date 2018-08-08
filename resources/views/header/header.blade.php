@@ -1,7 +1,12 @@
 <nav class="navbar navbar-fixed-top mainnav">
-  <div class="row" id="msmeImg">
-    <div class="center-align" style="padding-top: 11px; padding-bottom: 11px;background-color: #9f1d35;">
-      <a class="center-align" href="{{ url('registration')}}" style="color: #ffff !important;" ><img src="{{asset('images/zxc.png')}}" style="height: 100px; width: auto; margin-left: 10px; margin-right: 10px;"></a>
+  <div class="row" id="msmeImg" style="padding-top: 11px; padding-bottom: 11px;background-color: #9f1d35;">
+    <div align="left">
+      <img id="leftLogo" src="{{asset('images/2.png')}}" style="height: 100px; width: auto; margin-left: 10px; margin-right: 10px; float: left;">
+    </div>
+    <div align="center">
+      <img id="centerLogo" src="{{asset('images/right_matter.png')}}" style="height: 100px; width: auto; margin-left: 10px; margin-right: 10px; align-self: center;">
+      <img id="rightLogo" src="{{asset('images/2.png')}}" style="height: 100px; width: auto; margin-left: 10px; margin-right: 10px; float: right;">
+    </div>
     </div>
   </div>
   <!-- <div style="margin-top: 13px;float:  left; margin-bottom: 10px;">

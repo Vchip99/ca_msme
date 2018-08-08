@@ -6,6 +6,7 @@
     <div class="footer-content-div col-m-6 col-3" >
         <div class="footer-content-div-heading">REGISTRATION</div>
         <a href="{{ url('registration')}}"><div class="list-item">MSME Registration</div></a>
+        <a href="{{ url('registration')}}"><div class="list-item">Update MSME Registration</div></a>
     </div>
     <div class="footer-content-div col-m-6 col-3" >
       <div class="footer-content-div-heading">OTHERS</div>
@@ -48,4 +49,9 @@
 </div>
 <script type="text/javascript">
   $(document).scroll(function() { var y = $(this).scrollTop(); if (y > 400) { $('#msmeImg').fadeOut(); } else { $('#msmeImg').fadeIn(); } });
+  $(document).ready(function() {
+    var x = screen.width;
+    if (x < 800) { $('#centerLogo').hide(); } else { $('#centerLogo').show(); }
+    if (x < 500) { $('#rightLogo').hide(); } else { $('#rightLogo').show(); }
+  });
 </script>
