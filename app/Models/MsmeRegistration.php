@@ -26,7 +26,7 @@ class MsmeRegistration extends Model
         '5' => 'Completed',
     ];
 
-    public static  $msmePrice = 10;
+    public static  $msmePrice = 1500;
 
     protected static function addOrUpdateMsmeRegistration(Request $request, $isUpdate=false){
     	$adhaarNumber = InputSanitise::inputString($request->get('adhaar_number'));
@@ -87,7 +87,7 @@ class MsmeRegistration extends Model
     	} else {
         	$newMsmeRegistration = new static;
 
-            $subadmins = Admin::where('is_subadmin', 1)->select('id')->get();
+            $subadmins = Admin::all();
             $allSubadmins = [];
             if(is_object($subadmins) && false == $subadmins->isEmpty()){
                 foreach($subadmins as $subadmin){

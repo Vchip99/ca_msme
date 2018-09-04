@@ -29,7 +29,7 @@ class AdminController extends Controller
             $allRegistrations = MsmeRegistration::orderBy('id', 'desc')->get();
             $unCompletedCount = MsmeRegistration::where('application_status', '<', 5)->count();
         }
-        $subadmins = Admin::where('is_subadmin', 1)->get();
+        $subadmins = Admin::all();
         return view('admin.home', compact('allRegistrations', 'loginUser', 'subadmins', 'unCompletedCount'));
     }
 
@@ -179,7 +179,7 @@ class AdminController extends Controller
         }
         $allSubadmins = [];
 
-        $subadmins = Admin::where('is_subadmin', 1)->get();
+        $subadmins = Admin::all();
         if(is_object($subadmins) && false == $subadmins->isEmpty()){
             foreach($subadmins as $subadmin){
                 $allSubadmins[] = [
@@ -218,7 +218,7 @@ class AdminController extends Controller
         }
         $allSubadmins = [];
 
-        $subadmins = Admin::where('is_subadmin', 1)->get();
+        $subadmins = Admin::all();
         if(is_object($subadmins) && false == $subadmins->isEmpty()){
             foreach($subadmins as $subadmin){
                 $allSubadmins[] = [

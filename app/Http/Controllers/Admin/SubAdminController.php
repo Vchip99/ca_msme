@@ -130,6 +130,17 @@ class SubAdminController extends Controller
         if(isset($subadminId)){
             $subadmin = Admin::find($subadminId);
             if(is_object($subadmin)){
+                $admin = Admin::where('is_subadmin', 0)->first();
+                if(is_object($admin)){
+                    $registrations = MsmeRegistration::where('assigned_sub_admin', $subadmin->id)->get();
+                    if(is_object($registrations) && false == $registrations->isEmpty()){
+                        foreach($registrations as $registration){
+                            $registration->assigned_sub_admin = $admin->id;
+                            $registration->sub_admin = $admin->id;
+                            $registration->save();
+                        }
+                    }
+                }
                 $subadmin->delete();
                 DB::commit();
                 return Redirect::to('admin/sub-admin')->with('message', 'Sub Admin deleted successfully!');

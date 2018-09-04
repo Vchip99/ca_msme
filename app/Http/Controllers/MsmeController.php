@@ -175,7 +175,7 @@ class MsmeController extends Controller
                     $message .= '<p><b>Payment Status:</b> '.$status.'</p>';
                     $message .= '<p><b>Amount:</b> '.$amount.'</p>';
                     $message .= "<p>Thank</p>";
-                    $message .= "<p>www.msme.online.org.</p>";
+                    $message .= "<p>msme-online.org</p>";
 
                     $headers  = "MIME-Version: 1.0\r\n";
                     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
