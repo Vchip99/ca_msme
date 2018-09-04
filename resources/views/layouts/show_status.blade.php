@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('header-title')
+    <title>Online Msme Registration | Registration Status</title>
+@stop
 @section('header-css')
   <link rel="stylesheet" type="text/css" href="{{asset('css/footer.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/formstyle.css')}}">
@@ -220,6 +223,6 @@
     @endif
   </ul>
 </div>
-<div class="container support">For Support?  <span class="fa fa-phone" style="font-size: 17px;"></span> +91 9763996677 | 9960859069</div>
+<div class="container support">For Support?  <span class="fa fa-phone" style="font-size: 17px;"></span> +91 8530440444</div>
   @include('footer.footer')
 @stop

@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('header-title')
+    <title>Online Msme Registration | Contact Us</title>
+@stop
 @section('header-css')
   <link rel="stylesheet" type="text/css" href="{{asset('css/footer.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/contact.css')}}">

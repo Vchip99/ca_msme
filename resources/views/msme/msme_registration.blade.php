@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('header-title')
+    <title>Online Msme Registration</title>
+@stop
 @section('header-css')
     <title>MSME</title>
 	<link rel="stylesheet" type="text/css" href="{{asset('css/docstyle.css')}}">

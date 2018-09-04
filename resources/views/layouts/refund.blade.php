@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('header-title')
+	<title>Online Msme Registration | Refund Policy </title>
+@stop
 @section('header-css')
   <link rel="stylesheet" type="text/css" href="{{asset('css/footer.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/formstyle.css')}}">
@@ -19,7 +22,7 @@
 		<h4 style="text-align:center">2. REFUND REQUEST</h4>
 		<p>
 
-		Refund request can be send at help@msme.com. Refund request can be made within 10 days of online
+		Refund request can be send at contactus@msme-online.org. Refund request can be made within 10 days of online
 
 		application made.
 
@@ -51,7 +54,7 @@
 		<h4 style="text-align:center">6. CLARIFICATION ABOUT APPLICATION</h4>
 		<p>
 
-		If you have any query about application process, you can write us mail @ help@msme.com.
+		If you have any query about application process, you can write us at contactus@msme-online.org.
 
 		In case we need any additional clarification about your business activity our team will reach you by email or call.
 
@@ -59,7 +62,7 @@
 		<h4 style="text-align:center">7. FORCE MAJEURE</h4>
 		<p>
 
-		msme.com shall not be considered in breach of its Satisfaction Guarantee policy or default under any
+		msme-online.org shall not be considered in breach of its Satisfaction Guarantee policy or default under any
 
 		terms of service, and shall not be liable to the Client for any cessation, interruption, or delay in the performance of
 

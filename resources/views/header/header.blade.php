@@ -1,11 +1,11 @@
 <nav class="navbar navbar-fixed-top mainnav">
   <div class="row" id="msmeImg" style="padding-top: 11px; padding-bottom: 11px;background-color: #9f1d35;">
     <div align="left">
-      <img id="leftLogo" src="{{asset('images/2.png')}}" style="height: 100px; width: auto; margin-left: 10px; margin-right: 10px; float: left;">
+      <img id="leftLogo" src="{{asset('images/msme_logo.png')}}" style="height: 100px; width: auto; margin-left: 10px; margin-right: 10px; float: left;">
     </div>
     <div align="center">
       <img id="centerLogo" src="{{asset('images/right_matter.png')}}" style="height: 100px; width: auto; margin-left: 10px; margin-right: 10px; align-self: center;">
-      <img id="rightLogo" src="{{asset('images/2.png')}}" style="height: 100px; width: auto; margin-left: 10px; margin-right: 10px; float: right;">
+      <img id="rightLogo" src="{{asset('images/msme_logo.png')}}" style="height: 100px; width: auto; margin-left: 10px; margin-right: 10px; float: right;">
     </div>
     </div>
   </div>
@@ -53,7 +53,7 @@
       <li><a href="{{ url('track-order') }}">Track Registration</a></li>
       <li><a href="{{ url('faq')}}">FAQ</a></li>
       <li><a href="{{ url('contact-us')}}">Contact us</a></li>
-      <li><a href="{{ asset('download-form.pdf')}}" download>View Sample Certificate</a></li>
+      <li><a href="{{ asset('Sample-MSME-Certificate.pdf')}}" download>View Sample Certificate</a></li>
       <li>&nbsp;&nbsp;</li>
     </ul>
   </div>
