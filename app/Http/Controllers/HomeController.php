@@ -59,7 +59,7 @@ class HomeController extends Controller
         $data['email'] = $request->get('email');
         $data['user_message'] = $request->get('message');
         // send mail
-        Mail::to('vchipdesigng8@gmail.com')->send(new ContactUs($data));
+        Mail::to('contactus@msme-online.org')->send(new ContactUs($data));
         return Redirect::to('contact-us')->with('message', 'Thanks for email. we will contact you asap.');
     }
 
@@ -69,7 +69,7 @@ class HomeController extends Controller
 
     protected function sendResume(Request $request){
         // send mail
-        Mail::to('vchipdesigng8@gmail.com')->send(new SendResume($request));
+        Mail::to('contactus@msme-online.org')->send(new SendResume($request));
         return Redirect::to('career')->with('message', 'Thanks for resume. we will contact you asap.');
     }
 
@@ -98,7 +98,7 @@ class HomeController extends Controller
         $data['email'] = $request->get('email');
         $data['mobile'] = $request->get('mobile');
         // send mail
-        Mail::to('vchipdesigng8@gmail.com')->send(new EnquiryEmail($data));
+        Mail::to('contactus@msme-online.org')->send(new EnquiryEmail($data));
         return Redirect::to('/')->with('message', 'Thanks for enquiry. we will contact you asap.');
     }
 

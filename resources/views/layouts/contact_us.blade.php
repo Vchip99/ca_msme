@@ -25,7 +25,7 @@
         <div class="form-caption">MSME</div><br>
         <!-- <div class="contact-details"><p><span class="fa fa-map-marker"></span></p></div> -->
         <div class="contact-details"><p><span class="fa fa-envelope"></span> contactus@msme-online.org<span class="fa fa-phone"></span>+91 8530440444</p></div>
-        <div class="contact-details">This portal is for MSME/SSI/UDYOG ADDHAR Registration and optaining certificate in india. For any Schemes or Benefits related question, you can directly contact the MSME office in your respective districts or write us email for any concern realted to msme registation.In case of any query related to Registration, you can send us email at support@msme-online.org.</div>
+        <div class="contact-details">This portal is for MSME/SSI/UDYOG ADDHAR Registration and optaining certificate in india. For any Schemes or Benefits related question, you can directly contact the MSME office in your respective districts or write us email for any concern realted to msme registation.In case of any query related to Registration, you can send us email at contactus@msme-online.org.</div>
       </div>
       <div class="column col-m-6 col-6">
           <form class="form-horizontal" role="form" method="POST" action="{{ url('contact-us') }}">

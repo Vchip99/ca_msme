@@ -210,7 +210,7 @@ class MsmeController extends Controller
             $mac_calculated = hash_hmac("sha1", implode("|", $data), "e39308a0e531454e97de1c8a158c0719");
         }
         if($mac_provided == $mac_calculated){
-            $to = 'vchipdesigng8@gmail.com';
+            $to = 'support@msme-online.org';
             $subject = 'Service Payment Request ' .$data['buyer_name'].'';
             $message = "<h1>Payment Details</h1>";
             $message .= "<hr>";

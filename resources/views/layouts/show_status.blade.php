@@ -223,6 +223,6 @@
     @endif
   </ul>
 </div>
-<div class="container support">For Support?  <span class="fa fa-phone" style="font-size: 17px;"></span> +91 8530440444</div>
+<div class="container support">For Support?  <span class="fa fa-envelope"></span> contactus@msme-online.org</div>
   @include('footer.footer')
 @stop
