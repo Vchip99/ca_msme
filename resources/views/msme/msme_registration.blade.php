@@ -61,7 +61,7 @@
                     <div class="form-group">
                         <label class="control-label col-m-6 col-6" for="applicant">1. Adhaar Card Number <sup>*</sup></label>
                         <div class="col-m-6 col-6" >
-                            <input type="text" class="form-control" name="adhaar_number" placeholder="Adhaar Card number" value="{{(old('adhaar_number'))?:NULL}}" required>
+                            <input type="number" class="form-control" name="adhaar_number" placeholder="Adhaar Card number" value="{{(old('adhaar_number'))?:NULL}}" maxlength="12"  pattern="[0-9]{12}"  required>
                         </div>
                    </div>
                 </div>
@@ -174,7 +174,7 @@
                                 <input type="text" class="form-control" name="city" placeholder="City/Town/Village/Locality" value="{{(old('city'))?:NULL}}" required>
                         </div>
                         <div class="col-m-6 col-6">
-                            <input type="text" class="form-control" name="pin" placeholder="Pin Code" value="{{(old('pin'))?:NULL}}" required>
+                            <input type="number" class="form-control" name="pin" placeholder="Pin Code" value="{{(old('pin'))?:NULL}}" required>
                         </div>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
                                     <input type="text" class="form-control" name="office_city" placeholder="City/Town/Village/Locality" value="{{(old('office_city'))?:NULL}}">
                             </div>
                             <div class="col-m-6 col-6">
-                                <input type="text" class="form-control" name="office_pin"  placeholder="Pin Code" value="{{(old('pin'))?:NULL}}">
+                                <input type="number" class="form-control" name="office_pin"  placeholder="Pin Code" value="{{(old('pin'))?:NULL}}">
                             </div>
                         </div>
                     </div>
@@ -321,7 +321,7 @@
                     <div class="form-group">
                         <label class="control-label col-m-6 col-6" for="mob_no">11. Mobile Number <sup>*</sup></label>
                         <div class="col-m-6 col-6">
-                            <input type=" text" class="form-control" name="mob_no" maxlength="10"  pattern="[0-9]{10}" placeholder="Enter your mobile number" value="{{(old('mob_no'))?:NULL}}" required>
+                            <input type="number" class="form-control" name="mob_no" maxlength="10"  pattern="[0-9]{10}" placeholder="Enter your mobile number" value="{{(old('mob_no'))?:NULL}}" required>
                         </div>
                       </div>
                 </div>
@@ -345,7 +345,7 @@
                     <div class="form-group">
                         <label class="control-label col-m-6 col-6" for="account_no">14. Account Number <sup>*</sup></label>
                         <div class="col-m-6 col-6">
-                            <input type="text" class="form-control" name="account_no" placeholder="Account Number" value="{{(old('account_no'))?:NULL}}" required>
+                            <input type="number" class="form-control" name="account_no" placeholder="Account Number" value="{{(old('account_no'))?:NULL}}" required>
                         </div>
                       </div>
                 </div>
@@ -361,7 +361,7 @@
                     <div class="form-group">
                         <label class="control-label col-m-6 col-6">16. Main Business Activity of Enterprise <sup>*</sup></label>
                         <div class="col-m-6 col-6">
-                            <select class="form-control" name="business_activity" onClick="selectActivity(this.value);" required>
+                            <select class="form-control" name="business_activity" onChange="selectActivity(this.value);" required>
                                 <option value="">Select Activity of Enterprise</option>
                                 <option value="Manufacturer" >Manufacturer</option>
                                 <option value="Service Provider" >Service Provider</option>
@@ -391,7 +391,7 @@
                     <div class="form-group">
                         <label class="control-label col-m-6 col-6">19. Number of Employees<sup>*</sup></label>
                         <div class="col-m-6 col-6">
-                            <input type="text" class="form-control" name="employees" placeholder="Number of Employees" value="{{(old('employees'))?:NULL}}" required>
+                            <input type="number" class="form-control" name="employees" placeholder="Number of Employees" value="{{(old('employees'))?:NULL}}" required>
                         </div>
                     </div>
                 </div>
@@ -399,7 +399,7 @@
                     <div class="form-group">
                         <label class="control-label col-m-6 col-6">20. Investment in Plant and Machinery (Amount in Lacs) <sup>*</sup></label>
                         <div class="col-m-6 col-6">
-                            <input type="text" class="form-control" name="investment_amount" placeholder="Investment in Plant and Machinery" value="{{(old('investment_amount'))?:NULL}}" required>
+                            <input type="number" class="form-control" name="investment_amount" placeholder="Investment in Plant and Machinery" value="{{(old('investment_amount'))?:NULL}}" required>
                         </div>
                     </div>
                 </div>
